@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button click;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,10 +38,9 @@ public class MainActivity extends AppCompatActivity {
         View layout = inflater.inflate(R.layout.custome_toast,(ViewGroup)findViewById(R.id.toastlayout));
 
         Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER,0,0);
+        toast.setGravity(Gravity.BOTTOM,0,150);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(layout);
-
         toast.show();
 
     }
